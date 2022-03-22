@@ -1,0 +1,13 @@
+version: "3"
+services:
+  emg-notebook:
+    image: olemn/emg_jupyter:2022_03_22
+    volumes:
+      - ./work:/home/jovyan/work
+    ports:
+      - 8888:8888
+    container_name: emg-notebook-container
+    user: root
+    environment:
+      - NB_UID=${UID}
+      - NB_GID=${GID}
