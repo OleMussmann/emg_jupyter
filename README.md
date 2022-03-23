@@ -2,7 +2,7 @@
 
 1. Install `docker` and `docker-compose`.
 2. Copy your data in the `work/data` folder.
-3. Run `./set_environment.sh` to prepare an `.env` file. It contains your UID and GID that will be used to make data transfer between the Jupyter environment and your host system seamless.
+3. Run `./set_environment.sh` to prepare an `.env` file. It contains your UID and GID that will be used to make data transfer between the Jupyter environment and your host system seamless. You only need to do this once.
 4. Summon the JupyterLab environment with `docker-compose up`.
 5. Click on the link http://127.0.0.1:8888/lab?token=... that appears in the log.
 6. Work in the work/notebooks folder within JupyterLab.
